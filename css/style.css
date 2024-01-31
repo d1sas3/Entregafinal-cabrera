@@ -57,6 +57,9 @@
     transition: 0.2;
 }
 @media (max-width: 990px) {
+    .navbar ul{
+        margin-left: 0px;
+    }
     .nav-item a:hover{
         color: rgb(235, 19, 120);
     }
