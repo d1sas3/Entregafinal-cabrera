@@ -53,12 +53,12 @@
 }
 .nav-item a:hover{
     text-decoration: underline;
-    color: rgb(255, 255, 255);
+    color: rgb(235, 19, 120);
     transition: 0.2;
 }
 @media (max-width: 990px) {
     .nav-item a:hover{
-        color: rgba(5, 230, 238, 0.925);
+        color: rgb(235, 19, 120);
     }
   }
 .navbar-brand img{
@@ -84,7 +84,7 @@
     color: black;
 }
 .inicio a:hover{
-    color: rgb(0, 225, 255);
+    color: rgb(235, 19, 120);
     transition: 0.2s;
 }
 /* media de el contenedor  */
@@ -145,7 +145,7 @@
 .footer-item a:hover{
     padding-left: 2px;
     transition: 0.2s;
-    color: rgb(20, 135, 155);
+    color: rgb(235, 19, 120);
 }
 /* Style redes */
 .redes{
