@@ -74,10 +74,10 @@
 
 #main {
     border-top: 1px solid black;
-    border-bottom: 1px solid black;
 }
 .inicio{
     text-align: center;
+    margin: 20px;
 }
 .inicio a{
     text-decoration: none;
@@ -119,21 +119,20 @@
     height: 100%;
     width: 100%;
     margin: 10px 0px;
-    background-color: rgb(85, 85, 85);
+    background-color: rgba(85, 85, 85, 0.185);
 }
 .container-fluid{
     flex-wrap: wrap;
 }
 #footer{
+    border-top: 1px solid black;
 }
 .footer-item{
-    border-left: 1px solid black;
-    border-right: 1px solid black;
     padding-top: 5px;
     flex-wrap: wrap;
     text-align: center;
     margin: 10px 22px;
-    height: 200px;
+    height: auto;
     width: 290px;
 }
 .footer-item a{
@@ -150,7 +149,6 @@
 }
 /* Style redes */
 .redes{
-    border-top: 1px solid black;
     text-align: center;
     margin-right: 27px;
 }
