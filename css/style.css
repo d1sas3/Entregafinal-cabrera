@@ -1,0 +1,196 @@
+*{
+    font-family: Helvetica,roboto,Arial,sans-serif;
+}
+/* header */
+#header{
+    background-color: rgba(3, 163, 255, 0.26);
+    margin: 0px 0px 5px ;
+}
+/* anuncio */
+.anuncio {
+    height: 30px;
+    background-color: black;
+    width: 100%;
+    border: 1px solid rgb(255, 255, 255);
+}
+.anuncio p {
+    text-align: center;
+    padding: 1px;
+    color: white;
+    text-shadow: white 2px 2px 2px;
+}
+/* bootsrap styles nav*/
+.navbar-brand img {
+    height: 50px;
+    width: 50px;
+    margin-left: 10px;
+}
+.icon-button-carrito, .icon-button-login {
+    color: black;
+    font-size: 18px;
+    padding: 8px 17px;
+    transition: 0.3s color;
+}
+/* color hover carrito y login */
+.icon-button-login:hover, .icon-button-carrito:hover {
+    color: white;
+}
+/* menu hamburguesa */
+.navbar-toggler {
+    border: none;
+    font-size: 1.2rem;
+}
+.navbar-toggler:focus, .btn-close:focus {
+    box-shadow: none;
+}
+/* tama;o del menu principal */
+.nav-link {
+    font-size: 17px;
+    font-weight: 600;
+}
+.nav-item a:hover{
+    text-decoration: underline;
+    color: rgb(255, 255, 255);
+    transition: 0.2;
+}
+@media (max-width: 990px) {
+    .nav-item a:hover{
+        color: rgba(5, 230, 238, 0.925);
+    }
+  }
+.navbar-brand img{
+    height: 40px;
+    width: 40px;
+}
+/* Estilos para el carrousel */
+  .carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  /* Estilos para los controles del carrousel */
+
+#main {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.inicio{
+    text-align: center;
+}
+.inicio a{
+    text-decoration: none;
+    color: black;
+}
+.inicio a:hover{
+    color: rgb(0, 225, 255);
+    transition: 0.2s;
+}
+/* media de el contenedor  */
+
+/*  */
+.contenedor-cajas {
+    background-color: white;
+    margin: 0 auto;
+}
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+.flex, .flex1 {
+    margin: 20px;
+    height: 400px;
+    width: 400px;
+    background-color: black;
+}
+.flex1 img{
+    height: 300px;
+    width: 190px;
+    margin: 60px 100px;
+}
+.flex img{
+    margin: 50px;
+    height: 300px;
+    width: 300px;
+}
+.form-area {
+    height: 100%;
+    width: 100%;
+    margin: 10px 0px;
+    background-color: rgb(85, 85, 85);
+}
+.container-fluid{
+    flex-wrap: wrap;
+}
+#footer{
+    background-color: rgba(3, 163, 255, 0.26);
+}
+.footer-item{
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: 10px 22px;
+    height: 200px;
+    width: 290px;
+}
+.footer-item a{
+    font-size: 18px;
+    margin: 7px;
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+.footer-item a:hover{
+    padding-left: 2px;
+    transition: 0.2s;
+    color: rgb(20, 135, 155);
+}
+/* Style redes */
+.redes{
+    border-top: 1px solid black;
+    text-align: center;
+    margin-right: 27px;
+}
+.span{
+    color: black;
+    text-align: center;
+}
+.redes ul li {
+    text-align: center;
+    display: inline-block;
+    margin: 0px 5px;
+    width: 50px;
+    height: 10px;
+  }
+.redes ul li .facebook:hover {
+    background: rgb(13, 116, 201);
+    transition: 0.5s;
+  }
+.redes ul li .instagram:hover {
+    background: #e6075c;
+    transition: 0.5s;
+  }
+.redes ul li .twitter:hover {
+    background: rgb(0, 0, 0);
+    transition: 0.5s;
+  }
+.redes ul li .whatsapp:hover {
+    background: rgb(12, 252, 72);
+    transition: 0.5s;
+  }
+.redes ul li a {
+    display: block;
+    background-color: #000000;
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+  }
+.redes ul li a:hover {
+    box-shadow: 0 5px 5px 0px black;
+    filter: none;
+  }
+.redes ul:hover a { 
+    filter: blur(2px);
+    transition: 0.5s;
+  }
