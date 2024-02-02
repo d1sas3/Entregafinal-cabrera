@@ -60,20 +60,6 @@
 .navbar-toggler:focus, .btn-close:focus {
     box-shadow: none;
 }
-/* media -990 */
-@media (max-width: 990px) {
-    .navbar ul{
-        margin-left: 0px;
-    }
-    .nav-item a:hover{
-        color: #edafb8;
-    }
-  }
-  @media (max-width: 1399px) {
-    .footer-item{
-        text-align: center;
-    }
-  }
 /* Estilos para el carrousel */
   .carousel-caption h2 {
     font-size: 2.5rem;
@@ -137,7 +123,7 @@
     text-align: center;
     height: 650px;
     width: 650px;
-
+    transition: 0.5s;
 }
 .texto-locales a, .texto-coleccion a{
     color: black;
@@ -158,21 +144,6 @@
 .texto-coleccion{
     order: 1;
 }
-@media (max-width: 1337px){
-    .texto-locales, .texto-coleccion{
-        display: block;
-        height: 170px;
-    }
-    .texto-locales{
-        margin-bottom: 30px;
-    }
-    .imagen-coleccion{
-        order: 1;
-    }
-    .texto-coleccion{
-        order: 2;
-    }
-}
 .contenedor-cajas {
     background-color: rgb(243, 243, 233);
     width: auto;
@@ -186,12 +157,13 @@
     margin: 0px 62px 80px 62px;
     height: 450px;
     width: 355px;
-    transition: 0.5s ease
+    transition: 0.5s
 }
+
 .flex:hover{
     height: 490px;
-    width: 390px;
-    transition: 0.4s ;
+    width: 385px;
+    transition: 0.5s ;
 }
 .flex img{
     margin: 0px;
@@ -220,14 +192,15 @@
 }
 .titulo{
     text-align: center;
-    margin: 150px;
+    margin: 100px;
 }
 .titulo h1{
-    transition: 1s;
-    font-size: 50px;
+    transition: 0.5s;
+    font-size: 250%;
+    font-weight: 600;
 }
 .titulo h1:hover{
-    font-size: 110px;
+    font-size: 260%;
     color: #9db4db;
     transition: 0.5s;
 }
@@ -313,3 +286,71 @@
     box-shadow: 0 5px 5px 0px black;
     filter: none;
   }
+/* media */
+@media (max-width: 655px){
+    .imagen-locales, .imagen-coleccion{
+        margin: 10px;
+        height: 450px;
+        width: 450px;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 555px){
+    .imagen-locales, .imagen-coleccion{
+        margin: 10px;
+        height: 350px;
+        width: 350px;
+    }
+    .flex {
+        margin: 0px 62px 80px 62px;
+        height: 400px;
+        width: 305px;
+        transition: 0.5s;
+    }
+    .flex:hover{
+        height: 410px;
+        width: 315px;
+        transition: 0.5s ;
+    }
+}
+@media (max-width: 755px){
+    .imagen-locales, .imagen-coleccion{
+        margin: 10px;
+        height: 550px;
+        width: 550px;
+        transition: 0.5s;
+    }
+}
+/* media -990 */
+@media (max-width: 990px) {
+    .navbar ul{
+        margin-left: 0px;
+    }
+    .nav-item a:hover{
+        color: #edafb8;
+    }
+  }
+  @media (max-width: 1399px) {
+    .footer-item{
+        text-align: center;
+    }
+  }
+@media (max-width: 1337px){
+    .texto-locales, .texto-coleccion{
+        display: block;
+        height: 170px;
+        transition: 0.5s;
+    }
+    .texto-locales{
+        margin-bottom: 30px;
+    }
+    .imagen-coleccion{
+        order: 1;
+    }
+    .texto-coleccion{
+        order: 2;
+    }
+    .titulo{
+        margin-bottom: 200px;
+    }
+}
