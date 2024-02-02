@@ -16,20 +16,29 @@
 /* anuncio texto */
 .anuncio p {
     text-align: center;
-    padding: 1px;
-    color: white;
-    text-shadow: white 2px 2px 2px;
+    padding: 2px;
+    text-shadow: white 1px 1px 2px;
 }
 /* bootsrap styles nav*/
 .navbar ul{
     padding-top: 8px;
-    margin-left: 80px;
+    margin-left: 140px;
 }
 /* logo de la pag, flor */
 .navbar-brand img {
-    height: 50px;
-    width: 50px;
+    height: 40px;
+    width: 40px;
     margin-left: 20px;
+}
+/* tama;o del menu principal */
+.nav-link {
+    font-weight: 600;
+    transition: 0.2s;
+}
+.nav-item a:hover{
+    padding: 4px;
+    color: #edafb8;
+    transition: 0.2s;
 }
 /* search, login, carrito */
 .icon-button-carrito, .icon-button-login, .bi-search-heart {
@@ -51,16 +60,6 @@
 .navbar-toggler:focus, .btn-close:focus {
     box-shadow: none;
 }
-/* tama;o del menu principal */
-.nav-link {
-    font-weight: 600;
-    transition: 0.2s;
-}
-.nav-item a:hover{
-    padding: 4px;
-    color: #edafb8;
-    transition: 0.2s;
-}
 /* media -990 */
 @media (max-width: 990px) {
     .navbar ul{
@@ -75,10 +74,6 @@
         text-align: center;
     }
   }
-.navbar-brand img{
-    height: 40px;
-    width: 40px;
-}
 /* Estilos para el carrousel */
   .carousel-caption h2 {
     font-size: 2.5rem;
@@ -92,25 +87,38 @@
 }
 .inicio{
     text-align: center;
-    margin: 0px auto;
-    width: 200px;
-    height: 30px;
+    height: 35px;
 }
 .inicio a{
-    padding: 5px;
-    background-color: red;
-    border: 1px dashed black;
+    padding: 7px;
+    font-size: 17px;
+    background-color: #9db4db;
     text-decoration: none;
     color: white;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 .inicio a:hover{
-    color: #3a405a;
-    transition: 0.2s;
-    padding: 4px;
+    border: 1px dashed black;
+    background-color: #edafb8;
+    transition: 0.3s;
+}
+/* formulario boton */
+.btn{
+    background-color: #9db4db;
+    border: 0;
+    height: 37px;
+    border-radius: 0;
+}
+.form-control{
+    border-radius: 0;
+}
+/*  */
+.btn:hover{
+    background-color: #edafb8;
 }
 /* locales */
 .locales-coleccion{
+    margin: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,28 +140,17 @@
 
 }
 .texto-locales a, .texto-coleccion a{
-    color: white;
+    color: black;
     text-decoration: none;
     text-shadow: 2px 2px 4px #000;
     transition: 0.5s;
 }
 .texto-locales h2, .texto-coleccion h2{
-    font-size: 50px;
-}
-.texto-locales p, .texto-coleccion p{
-    font-size: 30px;
+    font-size: 38px;
 }
 .texto-locales a:hover, .texto-coleccion a:hover{
-    font-size: 33px;
     transition: 0.5s;
     color: #9db4db;
-}
-.texto-locales button, .texto-coleccion button{
-    color: white;
-    background-color: #edafb8;
-}
-.texto-locales button:hover, .texto-coleccion button:hover{
-    display: none;
 }
 .imagen-coleccion{
     order: 2;
@@ -164,7 +161,10 @@
 @media (max-width: 1337px){
     .texto-locales, .texto-coleccion{
         display: block;
-        height: 130px;
+        height: 170px;
+    }
+    .texto-locales{
+        margin-bottom: 30px;
     }
     .imagen-coleccion{
         order: 1;
@@ -201,24 +201,35 @@
 .flex a{
     text-align: center;
     text-decoration: none;
-    color: white;
-    text-shadow: 2px 2px 4px #000
+    color: black;
+    text-shadow: 2px 2px 4px #000;
+    transition: 0.4s;
+}
+.flex a:hover{
+    transition: 0.4s;
+    color: #edafb8;
 }
 .form-area {
     height: 100%;
     width: 100%;
     margin: 10px 0px;
-    background-color: rgba(85, 85, 85, 0.185);
+    background-color: rgba(255, 255, 255, 0.466);
 }
 .container-fluid{
     flex-wrap: wrap;
 }
 .titulo{
     text-align: center;
-    margin: 20px;
+    margin: 150px;
 }
 .titulo h1{
+    transition: 1s;
     font-size: 90px;
+}
+.titulo h1:hover{
+    font-size: 110px;
+    color: #9db4db;
+    transition: 0.5s;
 }
 #footer{
     background-color: #9db4db;
@@ -226,11 +237,11 @@
     padding: 10px;
 }
 .footer-item{
+    text-align: center;
     padding-top: 5px;
     flex-wrap: wrap;
     margin: 10px 22px;
-    height: auto;
-    width: 290px;
+    width: 300px;
 }
 .footer-item a{
     font-size: 18px;
@@ -248,7 +259,10 @@
 .redes{
     padding: 10px;
     text-align: center;
-    margin-right: 27px;
+    margin-right: 45px;
+}
+.redes h2{
+    font-weight: 600;
 }
 .span{
     color: black;
@@ -261,6 +275,9 @@
     width: 50px;
     height: 10px;
   }
+.facebook, .intagram, .twitter, .whatsapp{
+    transition: 0.5s;
+}
 .redes ul li .facebook:hover {
     background: rgb(13, 116, 201);
     transition: 0.5s;
@@ -287,8 +304,4 @@
 .redes ul li a:hover {
     box-shadow: 0 5px 5px 0px black;
     filter: none;
-  }
-.redes ul:hover a { 
-    filter: blur(2px);
-    transition: 0.5s;
   }
