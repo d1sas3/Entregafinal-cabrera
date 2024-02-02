@@ -174,6 +174,19 @@
     height: 650px;
     width: 650px;
     background-color: black;
+    transition: 1s;
+}
+.imagen-locales:hover,
+.imagen-coleccion:hover{
+    height: 700px;
+    width: 700px;
+    transition: 0.5s;
+}
+.imagen-locales img,
+.imagen-coleccion img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .texto-locales,
@@ -201,7 +214,7 @@
 }
 
 .texto-locales a:hover,
-.texto-coleccion a:hover {
+.texto-coleccion a:hover     {
     transition: 0.5s;
     color: #9db4db;
 }
@@ -270,7 +283,7 @@
     width: 300px;
 }
 
-.footer-item h3{
+.footer-item h3 {
     font-weight: 600;
 }
 
