@@ -286,56 +286,7 @@
     box-shadow: 0 5px 5px 0px black;
     filter: none;
   }
-/* media */
-@media (max-width: 655px){
-    .imagen-locales, .imagen-coleccion{
-        margin: 10px;
-        height: 450px;
-        width: 450px;
-        transition: 0.5s;
-    }
-}
-@media (max-width: 555px){
-    .imagen-locales, .imagen-coleccion{
-        margin: 10px;
-        height: 350px;
-        width: 350px;
-    }
-    .flex {
-        margin: 0px 62px 80px 62px;
-        height: 400px;
-        width: 305px;
-        transition: 0.5s;
-    }
-    .flex:hover{
-        height: 410px;
-        width: 315px;
-        transition: 0.5s ;
-    }
-}
-@media (max-width: 755px){
-    .imagen-locales, .imagen-coleccion{
-        margin: 10px;
-        height: 550px;
-        width: 550px;
-        transition: 0.5s;
-    }
-}
-/* media -990 */
-@media (max-width: 990px) {
-    .navbar ul{
-        margin-left: 0px;
-    }
-    .nav-item a:hover{
-        color: #edafb8;
-    }
-  }
-  @media (max-width: 1399px) {
-    .footer-item{
-        text-align: center;
-    }
-  }
-@media (max-width: 1337px){
+  @media (max-width: 1337px){
     .texto-locales, .texto-coleccion{
         display: block;
         height: 170px;
@@ -352,5 +303,55 @@
     }
     .titulo{
         margin-bottom: 200px;
+    }
+}
+/* media */
+@media (max-width: 1399px) {
+    .footer-item{
+        text-align: center;
+    }
+  }
+/* media -990 */
+@media (max-width: 990px) {
+    .navbar ul{
+        margin-left: 0px;
+    }
+    .nav-item a:hover{
+        color: #edafb8;
+    }
+  }
+@media (max-width: 755px){
+    .imagen-locales, .imagen-coleccion{
+        margin: 10px;
+        height: 550px;
+        width: 550px;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 650px){
+    .imagen-locales, .imagen-coleccion{
+        margin: 10px;
+        height: 450px;
+        width: 450px;
+        transition: 0.5s;
+    }
+}
+@media (max-width: 555px){
+    .imagen-locales, .imagen-coleccion{
+        margin: 10px;
+        height: 390px;
+        width: 390px;
+        transition: 0.5s;
+    }
+    .flex {
+        margin: 0px 62px 80px 62px;
+        height: 400px;
+        width: 305px;
+        transition: 0.5s;
+    }
+    .flex:hover{
+        height: 410px;
+        width: 315px;
+        transition: 0.5s ;
     }
 }
