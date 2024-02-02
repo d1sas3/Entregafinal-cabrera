@@ -183,7 +183,7 @@
     justify-content: center;
 }
 .flex {
-    margin: 0px 62px 50px 62px;
+    margin: 0px 62px 80px 62px;
     height: 450px;
     width: 355px;
     transition: 0.5s ease
@@ -224,7 +224,7 @@
 }
 .titulo h1{
     transition: 1s;
-    font-size: 90px;
+    font-size: 50px;
 }
 .titulo h1:hover{
     font-size: 110px;
@@ -242,6 +242,14 @@
     flex-wrap: wrap;
     margin: 10px 22px;
     width: 300px;
+}
+.footer-item button{
+    background-color: #edafb8;
+    transition: 0.2;
+}
+.footer-item button:hover{
+    background-color: #ffffff;
+    transition: 0.2s;
 }
 .footer-item a{
     font-size: 18px;
