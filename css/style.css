@@ -176,12 +176,14 @@
     background-color: black;
     transition: 1s;
 }
+
 .imagen-locales:hover,
-.imagen-coleccion:hover{
+.imagen-coleccion:hover {
     height: 700px;
     width: 700px;
     transition: 0.5s;
 }
+
 .imagen-locales img,
 .imagen-coleccion img {
     width: 100%;
@@ -214,7 +216,7 @@
 }
 
 .texto-locales a:hover,
-.texto-coleccion a:hover     {
+.texto-coleccion a:hover {
     transition: 0.5s;
     color: #9db4db;
 }
@@ -412,7 +414,8 @@
     .texto-locales,
     .texto-coleccion {
         display: block;
-        height: 170px;
+        height: 50px;
+        margin-bottom: 20px;
         transition: 0.5s;
     }
 
@@ -429,7 +432,7 @@
     }
 
     .titulo {
-        margin-bottom: 200px;
+        margin: 50px 0px 70px 0px;
     }
 }
 
@@ -444,6 +447,10 @@
     }
 }
 
+@media (max-width: 770px) {
+    .titulo h1 {}
+}
+
 @media (max-width: 755px) {
 
     .imagen-locales,
@@ -451,6 +458,13 @@
         margin: 10px;
         height: 550px;
         width: 550px;
+        transition: 0.5s;
+    }
+
+    .imagen-locales:hover,
+    .imagen-coleccion:hover {
+        height: 580px;
+        width: 580px;
         transition: 0.5s;
     }
 }
@@ -464,6 +478,13 @@
         width: 450px;
         transition: 0.5s;
     }
+
+    .imagen-locales:hover,
+    .imagen-coleccion:hover {
+        height: 480px;
+        width: 480px;
+        transition: 0.5s;
+    }
 }
 
 @media (max-width: 555px) {
@@ -473,8 +494,8 @@
     }
 
     .productos-tienda:hover {
-        height: 350px;
-        width: 350px;
+        height: 320px;
+        width: 320px;
     }
 
     .imagen-locales,
@@ -485,16 +506,23 @@
         transition: 0.5s;
     }
 
-    .flex {
+    .imagen-locales:hover,
+    .imagen-coleccion:hover {
+        height: 420px;
+        width: 420px;
+        transition: 0.5s;
+    }
+
+    .productos {
         margin: 0px 62px 80px 62px;
-        height: 400px;
+        height: 390px;
         width: 305px;
         transition: 0.5s;
     }
 
-    .flex:hover {
+    .productos:hover {
         height: 410px;
-        width: 315px;
+        width: 325px;
         transition: 0.5s;
     }
 }
