@@ -54,23 +54,25 @@
 /* tama;o del menu principal */
 .nav-link {
     font-weight: 600;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 .nav-item a:hover{
     padding: 4px;
     color: #edafb8;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 /* media -990 */
 @media (max-width: 990px) {
-    .footer-item{
-        text-align: center;
-    }
     .navbar ul{
         margin-left: 0px;
     }
     .nav-item a:hover{
         color: #edafb8;
+    }
+  }
+  @media (max-width: 1399px) {
+    .footer-item{
+        text-align: center;
     }
   }
 .navbar-brand img{
@@ -100,15 +102,77 @@
     border: 1px dashed black;
     text-decoration: none;
     color: white;
+    transition: 0.2s;
 }
 .inicio a:hover{
     color: #3a405a;
     transition: 0.2s;
     padding: 4px;
 }
-/* media de el contenedor  */
+/* locales */
+.locales-coleccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.imagen-locales, .imagen-coleccion{
+    margin: 10px;
+    height: 650px;
+    width: 650px;
+    background-color: black;
+}
+.texto-locales, .texto-coleccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 650px;
+    width: 650px;
 
-/*  */
+}
+.texto-locales a, .texto-coleccion a{
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 4px #000;
+    transition: 0.5s;
+}
+.texto-locales h2, .texto-coleccion h2{
+    font-size: 50px;
+}
+.texto-locales p, .texto-coleccion p{
+    font-size: 30px;
+}
+.texto-locales a:hover, .texto-coleccion a:hover{
+    font-size: 33px;
+    transition: 0.5s;
+    color: #9db4db;
+}
+.texto-locales button, .texto-coleccion button{
+    color: white;
+    background-color: #edafb8;
+}
+.texto-locales button:hover, .texto-coleccion button:hover{
+    display: none;
+}
+.imagen-coleccion{
+    order: 2;
+}
+.texto-coleccion{
+    order: 1;
+}
+@media (max-width: 1337px){
+    .texto-locales, .texto-coleccion{
+        display: block;
+        height: 130px;
+    }
+    .imagen-coleccion{
+        order: 1;
+    }
+    .texto-coleccion{
+        order: 2;
+    }
+}
 .contenedor-cajas {
     background-color: rgb(243, 243, 233);
     width: auto;
@@ -119,9 +183,9 @@
     justify-content: center;
 }
 .flex {
-    margin: 0px 50px 50px 90px;
+    margin: 0px 62px 50px 62px;
     height: 450px;
-    width: 350px;
+    width: 355px;
     transition: 0.5s ease
 }
 .flex:hover{
@@ -148,6 +212,13 @@
 }
 .container-fluid{
     flex-wrap: wrap;
+}
+.titulo{
+    text-align: center;
+    margin: 20px;
+}
+.titulo h1{
+    font-size: 90px;
 }
 #footer{
     background-color: #9db4db;
