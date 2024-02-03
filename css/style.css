@@ -408,6 +408,121 @@
     transition: 1s;
 }
 
+/* redes */
+.titulo-redes h1 {
+    margin: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.publicaciones-redes-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0px 220px;
+}
+
+.publicaciones-redes {
+    width: auto;
+    height: 520px;
+}
+
+/* ofertas */
+
+.imagen-pagina-en-construccion {
+    text-align: center;
+    padding: 10px;
+}
+
+.imagen-pagina-en-construccion img {
+    height: 80%;
+    width: 80%;
+}
+
+/* nosotros */
+
+.imagen-nosotros {
+    height: 100%;
+    width: 100%;
+}
+
+.imagen-nosotros img {
+    height: 400px;
+    width: 720px;
+}
+
+.presentacion-nosotros {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    width: 500px;
+}
+
+.presentacion-nosotros h2 {
+    font-weight: 600;
+}
+
+.maps {
+    text-align: center;
+}
+
+.item5 {
+    justify-self: center;
+    align-self: center;
+    background-color: yellow;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+}
+
+.formulario {
+    height: 400px;
+    width: 550px;
+    margin: 0px auto;
+}
+
+.formulario h2 {
+    margin: 15px;
+    text-align: center;
+}
+
+.formulario form {
+    max-width: 420px;
+    margin: 0 auto;
+}
+
+.formulario form div {
+    margin-bottom: 10px;
+}
+
+.formulario form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.formulario form input,
+.formulario form textarea {
+    resize: none;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.formulario form button {
+    padding: 5 px 10px;
+    background-color: #9db4db;
+    color: white;
+    border: none;
+    transition: 0.5;
+}
+
+.formulario form button:hover {
+    background-color: #edafb8;
+    transition: 0.5;
+}
+
 /* todos los media */
 @media (max-width: 1416px) {
 
@@ -447,10 +562,6 @@
     }
 }
 
-@media (max-width: 770px) {
-    .titulo h1 {}
-}
-
 @media (max-width: 755px) {
 
     .imagen-locales,
@@ -470,6 +581,10 @@
 }
 
 @media (max-width: 650px) {
+    .maps iframe {
+        height: 350px;
+        width: 500px;
+    }
 
     .imagen-locales,
     .imagen-coleccion {
@@ -488,6 +603,15 @@
 }
 
 @media (max-width: 555px) {
+    .formulario {
+        max-width: 300px;
+    }
+
+    .maps iframe {
+        height: 250px;
+        width: 400px;
+    }
+
     .productos-tienda {
         height: 300px;
         width: 300px;
