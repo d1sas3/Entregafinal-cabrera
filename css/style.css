@@ -80,6 +80,7 @@
     background-color: rgb(245, 245, 233);
     border-top: 1px dashed black;
 }
+
 /* Estilos para el carrousel */
 
 .carousel-caption h2 {
@@ -226,10 +227,12 @@
     width: 100%;
     text-align: center;
 }
-.titulo a{
+
+.titulo a {
     text-decoration: none;
     color: black;
 }
+
 .titulo h1 {
     transition: 0.5s;
     font-size: 250%;
@@ -374,7 +377,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px;
+    margin: 5px;
 }
 
 .productos-tienda h2 {
@@ -390,59 +393,66 @@
     height: 450px;
     width: 450px;
     background-color: black;
-    transition: 1s;
+    transition: 0.5s;
 }
 
 .productos-tienda:hover {
-    transform: scale(1.1);
+    transform: scale(1.07);
 }
 
 /* redes */
 .titulo-redes h1 {
-    margin: 10px;
     font-weight: 600;
+    margin-top: 20px;
     text-align: center;
 }
 
 .publicaciones-redes-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 0px 220px;
+    justify-content: center;
 }
 
 .publicaciones-redes {
-    width: auto;
-    height: 520px;
+    margin: 10px;
+    width: 450px;
 }
 
 /* ofertas */
-.descuentos{
+.descuentos {
     background-color: black;
     text-align: center;
+    width: 100%;
 }
-.descuentos h2{
+
+.descuentos h2 {
     color: white;
     padding: 15px;
 }
-.catalogo-en-descuento{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 0 auto;
-    width: 100%;
-}
-.catalogo-en-descuento div{
-    margin: 15px;
-    height: 500px;
-    width: 400px;
-    background-color: red;
-}
-.descuento-texto h2{
+
+.descuento-texto h2 {
     text-align: center;
     margin: 10px;
     font-weight: 600;
 }
+.card{
+    border: none;
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.5);
+    margin: 0px 0px 20px 0px;
+}
+.card a {
+    text-decoration: none;
+    color: black;
+}
+
+.card a:hover{
+    color: pink;
+}
+.card:hover {
+    transform: scale(0.9);
+}
+
 /* nosotros */
 .nosotros,
 .locales-ubicacion,
