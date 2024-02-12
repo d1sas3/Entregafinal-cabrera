@@ -484,24 +484,23 @@
 .locales-ubicacion img,
 .maps {
     height: 400px;
-    width: 650px;
+    width: 700px;
 }
 
 .texto-nosotros p,
 .locales-texto p,
 .direcciones {
-    width: 650px;
+    width: 700px;
     text-align: center;
 }
 
-/* nosotros */
 .maps {
-    width: 650px;
+    width: 700px;
     height: 400px;
 }
 
 .ubicaciones {
-    width: 650;
+    width: 700;
 }
 
 .preguntas-frecuentes {
@@ -509,7 +508,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 650px;
+    width: 700px;
     height: 388px;
 }
 
@@ -518,7 +517,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 650px;
+    width: 700px;
 }
 
 .formulario h2 {
@@ -589,7 +588,7 @@
 }
 
 /* media nosotros */
-@media (max-width: 1317px) {
+@media (max-width: 1426px) {
     .locales-texto {
         order: 2;
     }
