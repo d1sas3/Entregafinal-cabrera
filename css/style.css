@@ -462,7 +462,12 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px 0px;
-    margin: 5px;
+}
+.nosotros h2,
+.locales-ubicacion h2,
+.maps-container h2,
+.formulario-container h2{
+    font-weight: 600;
 }
 
 .texto-nosotros {
@@ -476,51 +481,29 @@
 .locales-texto,
 .maps {
     display: flex;
-    height: 400px;
+    height: 500px;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
-
-.direcciones {
-    display: flex;
-    height: 400px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-self: center;
-}
-
 .nosotros img,
 .locales-ubicacion img,
 .maps {
-    height: 400px;
+    height: 500px;
     width: 700px;
 }
 
 .texto-nosotros p,
-.locales-texto p,
-.direcciones {
+.locales-texto p {
     width: 700px;
     text-align: center;
 }
 
 .maps {
     width: 700px;
-    height: 400px;
+    height: 500px;
 }
 
-.ubicaciones {
-    width: 700;
-}
-
-.preguntas-frecuentes {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 700px;
-    height: 388px;
-}
 
 .formulario {
     display: flex;
@@ -540,7 +523,7 @@
 }
 
 .formulario form div {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 
 .formulario form label {
@@ -551,10 +534,13 @@
 .formulario form input,
 .formulario form textarea {
     resize: none;
-    width: 400px;
-    height: 100%;
+    width: 410px;
+    height: 50px;
     padding: 10px;
     border: 1px solid #ccc;
+}
+.formulario form textarea{
+    height: 140px;
 }
 
 .formulario form button {
@@ -598,8 +584,16 @@
 }
 
 /* media nosotros */
-@media (max-width: 1426px) {
+@media (max-width: 1446px) {
+    .nosotros h2,
+    .locales-texto h2{
+        margin: 30px;
+    }
+    .formulario{
+        padding: 50px;
+    }
     .locales-texto {
+        height: 250px;
         order: 2;
     }
 
@@ -630,7 +624,21 @@
         }
     }
 }
-
+@media (max-width: 768px){
+    .nosotros img,
+    .locales-ubicacion img{
+        height: 100%;
+        width: 100%;
+        padding: 20px;
+    }
+    .texto-nosotros p,
+    .locales-texto p{
+        width: 300px;
+}
+    .carousel-slide{
+        display: none;
+    }
+}
 @media (max-width: 755px) {
 
     .imagen-locales,
@@ -648,9 +656,14 @@
 }
 
 @media (max-width: 650px) {
-    .maps iframe {
-        height: 350px;
-        width: 500px;
+    .formulario form input,
+    .formulario form textarea{
+        width: 300px;
+    }
+    .maps {
+        height: 100%;
+        width: 100%;
+        padding: 10px;
     }
 
     .imagen-locales,
@@ -716,8 +729,8 @@
     .imagen-locales,
     .imagen-coleccion {
         margin: 10px;
-        height: 300px;
-        width: 300px;
+        height: 320px;
+        width: 320px;
         transition: 0.5s;
     }
 
@@ -728,8 +741,8 @@
 
     .productos {
         margin: 0px 62px 80px 62px;
-        height: 350px;
-        width: 285px;
+        height: 380px;
+        width: 290px;
         transition: 0.5s;
     }
 
