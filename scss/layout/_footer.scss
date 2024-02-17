@@ -1,0 +1,112 @@
+#footer {
+    background-color: $color-azul;
+    border-top: 1px dashed black;
+    padding: 10px;
+}
+
+.container-fluid {
+    flex-wrap: wrap;
+}
+
+.footer-item {
+    text-align: center;
+    padding-top: 5px;
+    flex-wrap: wrap;
+    margin: 10px 22px;
+    width: 300px;
+
+    h3 {
+        font-weight: 600;
+    }
+
+    button {
+        background-color: $color-azul;
+        transition: 0.2;
+
+        &:hover {
+            background-color: $color-rosa;
+        }
+    }
+
+    a {
+        font-size: 18px;
+        margin-top: 7px;
+        display: block;
+        text-decoration: none;
+        color: black;
+        transition: 0.2s;
+
+        &:hover {
+            transform: scalex(1.02);
+            color: $color-rosa;
+        }
+    }
+}
+
+/* Style redes */
+
+.redes {
+    padding: 10px;
+    text-align: center;
+    margin-right: 45px;
+
+    ul {
+        h2{
+            @include h2;
+        }
+        li {
+            text-align: center;
+            display: inline-block;
+            margin: 0px 5px;
+            width: 50px;
+            height: 10px;
+        }
+    }
+}
+
+.facebook,
+.intagram,
+.twitter,
+.whatsapp {
+    transition: 0.5s;
+}
+
+.redes ul li {
+    .facebook:hover {
+        background: rgb(13, 116, 201);
+        transition: 0.5s;
+    }
+
+    .instagram:hover {
+        background: #e6075c;
+        transition: 0.5s;
+    }
+
+    .twitter:hover {
+        background: rgb(0, 0, 0);
+        transition: 0.5s;
+    }
+
+    .whatsapp:hover {
+        background: rgb(12, 252, 72);
+        transition: 0.5s;
+    }
+
+    a {
+        display: block;
+        background-color: #000000;
+        color: white;
+        line-height: 50px;
+        font-size: 20px;
+
+        &:hover {
+            box-shadow: 0 5px 5px 0px black;
+            filter: none;
+        }
+    }
+}
+
+.span {
+    color: black;
+    text-align: center;
+}

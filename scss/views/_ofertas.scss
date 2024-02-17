@@ -1,0 +1,40 @@
+/* ofertas */
+
+.descuentos {
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+    h2 {
+        color: white;
+        padding: 15px;
+    }
+}
+
+.descuento-texto h2 {
+    @include h2;
+    @include textshadow;
+    text-align: center;
+    margin: 10px;
+}
+
+.card {
+    border: none;
+    transition: 0.5s;
+    @include boxshadow;
+    background-color: $colordefondo;
+    margin: 0px 0px 20px 0px;
+
+    a {
+        @include a;
+
+        &:hover {
+            color: pink;
+        }
+    }
+
+    &:hover {
+        transform: scale(0.9);
+    }
+}

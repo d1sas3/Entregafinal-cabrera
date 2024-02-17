@@ -1,0 +1,173 @@
+#main {
+    background-color: $colordefondo;
+    border-top: 1px dashed black;
+}
+
+/* Estilos para el carrousel */
+
+.carousel-caption h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.productos-cajas {
+    background-color: $colordefondo;
+    width: auto;
+}
+
+.cajas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.productos {
+    margin: 0px 62px 80px 62px;
+    height: 475px;
+    width: 375px;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+
+    img {
+        border-radius: 1%;
+        box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
+        margin: 0px;
+        @include imagenresponsive;
+    }
+
+    a {
+        text-align: center;
+        text-decoration: none;
+        color: black;
+        @include textshadow;
+        transition: 0.4s;
+
+        &:hover {
+            color: $color-rosa;
+        }
+    }
+}
+
+/* espacio del formulario email */
+
+.formulario-area {
+    @include imagenresponsive;
+    margin: 10px 0px;
+    background-color: rgba(255, 255, 255, 0.466);
+}
+
+/* formulario de email */
+
+.form-control {
+    border-radius: 0;
+}
+
+/* formulario boton */
+
+.btn {
+    background-color: $color-azul;
+    border: 0;
+    height: 37px;
+    border-radius: 0;
+
+    &:hover {
+        background-color: $color-rosa;
+    }
+}
+
+/* hover boton */
+
+/* locales coleccion2024 */
+
+.locales-coleccion {
+    @include flexcenter;
+    margin: 40px;
+    flex-wrap: wrap;
+}
+
+.imagen-locales,
+.imagen-coleccion {
+    margin: 10px;
+    @include cajasdeinicio;
+    background-color: black;
+    transition: 0.5s;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+
+    img {
+        @include imagenresponsive;
+    }
+}
+
+.texto-locales,
+.texto-coleccion {
+    @include flexcenter;
+    text-align: center;
+    @include cajasdeinicio;
+    transition: 0.5s;
+
+    h2 {
+        @include h2;
+    }
+
+    a {
+        @include a;
+        @include textshadow;
+        transition: 0.5s;
+
+        &:hover {
+            @include textoscaleazul;
+        }
+    }
+}
+
+.imagen-coleccion {
+    order: 2;
+}
+
+.texto-coleccion {
+    order: 1;
+}
+
+.titulo {
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+
+    a {
+        @include a;
+    }
+
+    h1 {
+        @include h1;
+        width: 27rem;
+        margin: 0 auto;
+        &:hover {
+            @include textoscaleazul;
+        }
+    }
+}
+
+.inicio {
+    text-align: center;
+    height: 35px;
+
+    a {
+        @include a;
+        color: white;
+        background-color: $color-azul;
+        font-size: 17px;
+        padding: 7px;
+        transition: 0.3s;
+
+        &:hover {
+            border: 1px dashed black;
+            background-color: $color-rosa;
+        }
+    }
+}

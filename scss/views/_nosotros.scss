@@ -1,0 +1,123 @@
+/* nosotros */
+.nosotros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px 0px;
+    h2{
+        @include h2;
+        @include textshadow;
+        &:Hover{
+            color: $color-azul;
+        }
+    }
+    img{
+        height: 900px;
+        width: 700px;
+    }
+}
+.locales-ubicacion{
+    @extend .nosotros;
+    img{
+        @include boxshadow;
+        height: 900px;
+        width: 700px;
+    }
+}
+.maps-container{
+    @extend .nosotros;
+}
+.formulario-container{
+    @extend .nosotros;
+}
+
+.texto-nosotros {
+    @include flexcenter;
+    flex-direction: column;
+    p{
+        padding: 0 10%;
+        width: 700px;
+        text-align: center;
+    }
+}
+
+.locales-texto{
+    @include flexcenter;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+        width: 700px;
+        text-align: center;
+    }
+}
+.maps {
+    @extend .locales-texto;
+    height: 500px;
+    width: 700px;
+}
+
+.locales-texto {
+    @include flexcenter;
+    width: 700px;
+    a{
+    @include a;
+    text-decoration-line: underline;
+    transition: 0.5s;
+    &:hover {
+        transform: scale(1.1);
+        color: $color-rosa;
+    }
+}
+}
+.formulario {
+    @include flexcenter;
+    flex-direction: column;
+    width: 700px;
+
+    h2 {
+        text-align: center;
+    }
+
+    form {
+        max-width: 420px;
+
+        div {
+            margin-bottom: 30px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            resize: none;
+            width: 410px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #ccc;
+        }
+
+        textarea {
+            resize: none;
+            width: 410px;
+            height: 50px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            height: 140px;
+        }
+
+        button {
+            padding: 4px 4px;
+            background-color: #9db4db;
+            color: white;
+            border: none;
+            transition: 0.5;
+
+            &:hover {
+                background-color: #edafb8;
+                transition: 0.5;
+            }
+        }
+    }
+}
