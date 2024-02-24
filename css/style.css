@@ -177,6 +177,7 @@
 
 .imagen-locales,
 .imagen-coleccion {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   margin: 10px;
   height: 700px;
   width: 700px;
@@ -378,8 +379,11 @@
   color: black;
   text-decoration: none;
 }
+.tienda a:hover h2 {
+  color: #9db4db;
+}
 
-.productos-tienda {
+.productos-tienda-remeras, .productos-tienda-accesorios, .productos-tienda-bermudas, .productos-tienda-camisas, .productos-tienda-buzos, .productos-tienda-pantalones {
   background-image: url(../img/remera-fondo.jpg);
   background-position: center;
   background-size: contain;
@@ -391,14 +395,35 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
 }
-.productos-tienda h2 {
+.productos-tienda-remeras h2, .productos-tienda-accesorios h2, .productos-tienda-bermudas h2, .productos-tienda-camisas h2, .productos-tienda-buzos h2, .productos-tienda-pantalones h2 {
   color: white;
   text-shadow: 2px 2px 4px white;
-  transition: 0.4s;
+  transition: 0.1s;
 }
-.productos-tienda:hover {
+.productos-tienda-remeras:hover, .productos-tienda-accesorios:hover, .productos-tienda-bermudas:hover, .productos-tienda-camisas:hover, .productos-tienda-buzos:hover, .productos-tienda-pantalones:hover {
   transform: scale(1.07);
+}
+
+.productos-tienda-pantalones {
+  background-image: url(../img/pantalon.jpg);
+}
+
+.productos-tienda-buzos {
+  background-image: url(../img/buzo.jpg);
+}
+
+.productos-tienda-camisas {
+  background-image: url(../img/camisa.jpg);
+}
+
+.productos-tienda-bermudas {
+  background-image: url(../img/bermuda.jpg);
+}
+
+.productos-tienda-accesorios {
+  background-image: url(../img/accesorios.jpg);
 }
 
 /* redes */
@@ -468,6 +493,7 @@
   color: #9db4db;
 }
 .nosotros img, .formulario-container img, .maps-container img, .locales-ubicacion img {
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   height: 900px;
   width: 700px;
 }

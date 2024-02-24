@@ -6,19 +6,45 @@
     margin: 5px;
     a{
         @include a;
+        &:hover{
+            h2{
+                color: $color-azul;
+            }
+        }
     }
 }
-.productos-tienda {
+.productos-tienda-remeras {
     background-image: url(../img/remera-fondo.jpg);
     @include productocentrado;
     @include productostienda;
     @include flexcenter;
+    @include boxshadow;
     h2 {
         color: white;
         text-shadow: 2px 2px 4px white;
-        transition: 0.4s;
+        transition: 0.1s;
     }
-    &:hover {
+    &:hover{
         transform: scale(1.07);
     }
+}
+.productos-tienda-pantalones{
+    @extend .productos-tienda-remeras;
+    background-image: url(../img/pantalon.jpg);
+}
+.productos-tienda-buzos{
+    @extend .productos-tienda-remeras;
+    background-image: url(../img/buzo.jpg);
+}
+.productos-tienda-camisas{
+    @extend .productos-tienda-remeras;
+    background-image: url(../img/camisa.jpg);
+}
+.productos-tienda-bermudas{
+    @extend .productos-tienda-remeras;
+    background-image: url(../img/bermuda.jpg);
+}
+.productos-tienda-accesorios{
+    @extend .productos-tienda-remeras;
+    background-image: url(../img/accesorios.jpg);
 }

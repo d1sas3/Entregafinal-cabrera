@@ -12,6 +12,7 @@
         }
     }
     img{
+        @include boxshadow;
         height: 900px;
         width: 700px;
     }
