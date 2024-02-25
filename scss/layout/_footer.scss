@@ -65,31 +65,31 @@
 }
 
 .facebook,
-.intagram,
+.instagram,
 .twitter,
 .whatsapp {
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 .redes ul li {
     .facebook:hover {
+        transition: 0.2s;
         background: rgb(13, 116, 201);
-        transition: 0.5s;
     }
 
     .instagram:hover {
+        transition: 0.2s;
         background: #e6075c;
-        transition: 0.5s;
     }
 
     .twitter:hover {
+        transition: 0.2s;
         background: rgb(0, 0, 0);
-        transition: 0.5s;
     }
 
     .whatsapp:hover {
+        transition: 0.2s;
         background: rgb(12, 252, 72);
-        transition: 0.5s;
     }
 
     a {

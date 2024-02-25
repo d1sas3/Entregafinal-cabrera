@@ -329,27 +329,27 @@
 }
 
 .facebook,
-.intagram,
+.instagram,
 .twitter,
 .whatsapp {
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 .redes ul li .facebook:hover {
+  transition: 0.2s;
   background: rgb(13, 116, 201);
-  transition: 0.5s;
 }
 .redes ul li .instagram:hover {
+  transition: 0.2s;
   background: #e6075c;
-  transition: 0.5s;
 }
 .redes ul li .twitter:hover {
+  transition: 0.2s;
   background: rgb(0, 0, 0);
-  transition: 0.5s;
 }
 .redes ul li .whatsapp:hover {
+  transition: 0.2s;
   background: rgb(12, 252, 72);
-  transition: 0.5s;
 }
 .redes ul li a {
   display: block;
@@ -866,7 +866,7 @@
     height: 300px;
     width: 350px;
   }
-  .productos-tienda {
+  .productos-tienda-remeras, .productos-tienda-pantalones, .productos-tienda-buzos, .productos-tienda-camisas, .productos-tienda-bermudas, .productos-tienda-accesorios {
     height: 300px;
     width: 300px;
   }
