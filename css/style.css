@@ -102,7 +102,6 @@
 }
 
 .productos-cajas {
-  background-color: rgba(241, 227, 214, 0.849);
   width: auto;
 }
 
@@ -725,7 +724,13 @@
   }
 }
 /* media nosotros */
-@media (max-width: 1415px) {
+@media (max-width: 1416px) {
+  .locales-ubicacion,
+  .formulario-container,
+  .maps-container,
+  .locales-ubicacion {
+    padding: 0px;
+  }
   .nosotros h2, .locales-ubicacion h2, .maps-container h2, .formulario-container h2,
   .locales-texto h2,
   .maps h2 {

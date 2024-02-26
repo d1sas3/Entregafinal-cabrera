@@ -21,8 +21,13 @@
 }
 
 /* media nosotros */
-@media (max-width: 1415px) {
-
+@media (max-width: 1416px) {
+    .locales-ubicacion,
+    .formulario-container,
+    .maps-container,
+    .locales-ubicacion{
+        padding: 0px;
+    }
     .nosotros h2,
     .locales-texto h2 {
         margin: 30px;
