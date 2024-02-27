@@ -450,7 +450,7 @@
   padding: 15px;
 }
 
-.descuento-texto h2 {
+.descuento-texto h2, h1 {
   font-size: 38px;
   font-weight: 600;
   text-shadow: 2px 2px 4px rgb(68, 68, 68);
@@ -462,7 +462,7 @@
   border: none;
   transition: 0.5s;
   box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
-  background-color: rgba(241, 227, 214, 0.849);
+  background-color: white;
   margin: 0px 0px 20px 0px;
 }
 .card a {
