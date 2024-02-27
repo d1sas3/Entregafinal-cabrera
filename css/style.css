@@ -470,7 +470,7 @@
   text-decoration: none;
 }
 .card a:hover {
-  color: pink;
+  color: #9db4db;
 }
 .card:hover {
   transform: scale(0.9);
