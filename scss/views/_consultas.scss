@@ -12,3 +12,20 @@
 #fin{
     height: 200px;
 }
+.talle-texto{
+    padding: 10px;
+    h2{
+        font-weight: 600;
+    }
+}
+.talle-form {
+    table {
+        width: 100%;
+    }
+    th,td{
+        background-color: #ffffff;
+            border: 1px solid #000000;
+            padding: 8px;
+            text-align: left;
+    }
+}
