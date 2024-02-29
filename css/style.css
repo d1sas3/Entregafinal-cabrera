@@ -138,6 +138,14 @@
 .productos a:hover {
   color: #edafb8;
 }
+.productos a:hover h2 {
+  color: #edafb8;
+}
+.productos a h2 {
+  font-size: 38px;
+  font-weight: 600;
+  color: #9db4db;
+}
 
 /* espacio del formulario email */
 .formulario-area {

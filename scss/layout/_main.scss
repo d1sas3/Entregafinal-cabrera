@@ -5,9 +5,11 @@
 
 /* Estilos para el carrousel */
 
-.carousel-caption h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
+.carousel-caption {
+    h2 {
+        font-size: 2.5rem;
+        font-weight: bold;
+    }
 }
 
 .productos-cajas {
@@ -36,16 +38,22 @@
         margin: 0px;
         @include imagenresponsive;
     }
-
     a {
+        
         text-align: center;
         text-decoration: none;
         color: black;
         @include textshadow;
         transition: 0.4s;
-
-        &:hover {
+        &:hover{
             color: $color-rosa;
+            h2{
+                color: $color-rosa;
+            }
+        }
+        h2{
+            @include h2;
+            color: $color-azul;
         }
     }
 }
