@@ -46,14 +46,10 @@
         @include textshadow;
         transition: 0.4s;
         &:hover{
-            color: $color-rosa;
-            h2{
-                color: $color-rosa;
-            }
+            color: $color-azul;
         }
         h2{
             @include h2;
-            color: $color-azul;
         }
     }
 }
