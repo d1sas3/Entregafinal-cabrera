@@ -1,16 +1,18 @@
-#Garantia{
-    height: 50px;
-}
-#pagos,
-#envios,
-#politica,
-#nosotros,
-#locales,
-#talles,
-#tarjetas,
 #canjear,
-#fin{
-    height: 200px;
+#tarjetas,
+#talles,
+#locales,
+#nosotros,
+#politica,
+#envios,
+#pagos{
+    margin-top: 200px;
+}
+#garantia{
+    margin-top: 50px;
+}
+#canjear{
+    margin-bottom: 50px;
 }
 .talle-texto{
     padding: 10px;
@@ -27,5 +29,20 @@
             border: 1px solid #000000;
             padding: 8px;
             text-align: left;
+    }
+}
+.texto-consultas{
+    h2{
+        @include h2;
+        @include flexcenter;
+        @include textshadow;
+        text-align: center
+    }
+    p{
+        @include p;
+    }
+    strong{
+        text-decoration: underline; 
+        color: $color-azul;
     }
 }

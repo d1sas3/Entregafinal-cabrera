@@ -6,7 +6,15 @@
     font-size: 38px;
     font-weight: 600;
 }
-
+@mixin p{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 2;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 @mixin flexcenter {
     display: flex;
     justify-content: center;

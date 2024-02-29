@@ -35,7 +35,7 @@
   width: 160px;
   text-shadow: white 1px 1px 2px;
   position: relative;
-  animation: mover 10s infinite;
+  animation: mover 20s infinite;
 }
 
 /* anuncio texto */
@@ -510,6 +510,14 @@
   flex-direction: column;
 }
 .texto-nosotros p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  border: none;
   padding: 0 10%;
   width: 700px;
   text-align: center;
@@ -687,20 +695,23 @@
   width: 80%;
 }
 
-#Garantia {
-  height: 50px;
+#canjear,
+#tarjetas,
+#talles,
+#locales,
+#nosotros,
+#politica,
+#envios,
+#pagos {
+  margin-top: 200px;
 }
 
-#pagos,
-#envios,
-#politica,
-#nosotros,
-#locales,
-#talles,
-#tarjetas,
-#canjear,
-#fin {
-  height: 200px;
+#garantia {
+  margin-top: 50px;
+}
+
+#canjear {
+  margin-bottom: 50px;
 }
 
 .talle-texto {
@@ -718,6 +729,29 @@
   border: 1px solid #000000;
   padding: 8px;
   text-align: left;
+}
+
+.texto-consultas h2 {
+  font-size: 38px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 2px 2px 4px rgb(68, 68, 68);
+  text-align: center;
+}
+.texto-consultas p {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 2;
+  color: #333;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.texto-consultas strong {
+  text-decoration: underline;
+  color: #9db4db;
 }
 
 /* todos los media */
