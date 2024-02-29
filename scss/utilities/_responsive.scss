@@ -60,12 +60,11 @@
     }
 
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
-        grid-gap: 10px;
-        margin: 20px 60px;
+        grid-gap: 5px;
         grid-template-areas:
             "img img img titulo titulo  titulo"
             "img img img descripcion descripcion descripcion "
@@ -115,6 +114,10 @@
         margin: 0 auto;
         width: 70%;
     }
+    .relacionados-productos div{
+        width: 100%;
+        margin: 10px 0px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -160,9 +163,7 @@
         width: 300px;
     }
     .publicaciones-redes {
-        margin: 10px;
-        width: 350px;
-        height: 550px;
+        margin: 5px 0px;
     }
     .maps{
         iframe{
@@ -187,8 +188,8 @@
 @media (max-width: 555px) {
     .publicaciones-redes {
         margin: 10px;
-        width: 250px;
-        height: 450px;
+        width: 350px;
+        height: 550px;
     }
     .formulario {
         max-width: 300px;

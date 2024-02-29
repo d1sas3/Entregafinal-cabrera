@@ -469,6 +469,9 @@
   background-color: white;
   margin: 0px 0px 20px 0px;
 }
+.card img {
+  border-radius: 7px;
+}
 .card a {
   color: black;
   text-decoration: none;
@@ -612,8 +615,8 @@
 .grid-container {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-  margin: 20px 0px;
+  grid-gap: 1rem;
+  margin: 10px 0px;
   grid-template-areas: ". img img titulo titulo  ." ". img img descripcion descripcion . " ". relacionados relacionados relacionados relacionados  . " " . relacionados relacionados relacionados relacionados . ";
 }
 
@@ -628,18 +631,24 @@
 }
 
 .grid-titulo {
-  grid-area: titulo;
-  background-color: #edafb8;
-  border-radius: 2%;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
+  grid-area: titulo;
+  border-radius: 2%;
 }
 .grid-titulo h2 {
   font-weight: 800;
-  text-align: center;
-  margin: 5px;
+  margin: 0px 5px;
+}
+.grid-titulo a {
+  margin: 0px 5px;
+  color: white;
+  text-shadow: 2px 2px 4px rgb(68, 68, 68);
+  text-decoration: none;
+}
+.grid-titulo a:hover {
+  color: #9db4db;
 }
 .grid-titulo h3 {
   font-size: 20px;
@@ -647,38 +656,52 @@
   margin: 5px;
 }
 .grid-titulo span {
-  margin: 5px;
+  margin: 0px 5px;
 }
 .grid-titulo .form {
   display: flex;
   flex-direction: column;
   margin: 5px;
 }
-.grid-titulo .form #talle {
-  text-align: center;
-}
+.grid-titulo .form #talle,
 .grid-titulo .form #color {
+  color: white;
+  background-color: #9db4db;
+  width: 17%;
   text-align: center;
 }
 .grid-titulo .form #boton {
-  width: 150px;
+  border-radius: 5px;
+  color: white;
+  background-color: #9db4db;
+  width: 100%;
+  height: 4rem;
   margin-top: 10px;
+  transition: 0.3s;
+  border: none;
+}
+.grid-titulo .form #boton:hover {
+  transform: scale(1.01);
+  color: black;
 }
 
 .grid-descripcion {
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5);
   flex-direction: column;
   background-color: #9db4db;
   border-radius: 2%;
   grid-area: descripcion;
 }
 .grid-descripcion h2 {
+  font-weight: 800;
   text-align: center;
+  margin: 0px 10px;
 }
 .grid-descripcion p {
-  margin: 5%;
+  margin: 40px;
 }
 
 .grid-relacionados {
@@ -695,8 +718,8 @@
   justify-content: space-around;
 }
 .relacionados-productos div {
-  margin: 10px auto;
-  width: 80%;
+  margin: 10px;
+  width: 100%;
 }
 
 #canjear,
@@ -715,7 +738,7 @@
 }
 
 #canjear {
-  margin-bottom: 50px;
+  margin-bottom: 125px;
 }
 
 .talle-texto {
@@ -812,12 +835,11 @@
     order: 2;
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 1500px) {
   .grid-container {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    margin: 20px 60px;
+    grid-gap: 5px;
     grid-template-areas: "img img img titulo titulo  titulo" "img img img descripcion descripcion descripcion " "relacionados relacionados relacionados relacionados relacionados  relacionados " "relacionados relacionados relacionados relacionados relacionados relacionados ";
   }
 }
@@ -853,6 +875,10 @@
     display: block;
     margin: 0 auto;
     width: 70%;
+  }
+  .relacionados-productos div {
+    width: 100%;
+    margin: 10px 0px;
   }
 }
 @media (max-width: 768px) {
@@ -893,9 +919,7 @@
     width: 300px;
   }
   .publicaciones-redes {
-    margin: 10px;
-    width: 350px;
-    height: 550px;
+    margin: 5px 0px;
   }
   .maps iframe {
     height: 400px;
@@ -916,8 +940,8 @@
 @media (max-width: 555px) {
   .publicaciones-redes {
     margin: 10px;
-    width: 250px;
-    height: 450px;
+    width: 350px;
+    height: 550px;
   }
   .formulario {
     max-width: 300px;
