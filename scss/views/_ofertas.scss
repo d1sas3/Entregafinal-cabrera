@@ -12,7 +12,8 @@
     }
 }
 
-.descuento-texto h2, h1 {
+.descuento-texto h2,
+h1 {
     @include h2;
     @include textshadow;
     text-align: center;
@@ -21,13 +22,15 @@
 
 .card {
     border: none;
-    transition: 0.5s;
+    transition: 0.7s;
     @include boxshadow;
     background-color: white;
     margin: 0px 0px 20px 0px;
-    img{
+
+    img {
         border-radius: 7px;
     }
+
     a {
         @include a;
 
@@ -37,6 +40,6 @@
     }
 
     &:hover {
-        transform: scale(0.9);
+        transform: scale(0.95);
     }
 }

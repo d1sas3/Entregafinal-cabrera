@@ -38,17 +38,20 @@
         margin: 0px;
         @include imagenresponsive;
     }
+
     a {
-        
+
         text-align: center;
         text-decoration: none;
         color: black;
         @include textshadow;
         transition: 0.4s;
-        &:hover{
+
+        &:hover {
             color: $color-azul;
         }
-        h2{
+
+        h2 {
             @include h2;
         }
     }
@@ -151,6 +154,7 @@
         @include h1;
         width: 27rem;
         margin: 0 auto;
+
         &:hover {
             @include textoscaleazul;
         }

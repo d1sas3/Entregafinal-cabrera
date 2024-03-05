@@ -4,38 +4,46 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 20px 0px;
-    h2{
+
+    h2 {
         @include h2;
         @include textshadow;
-        &:Hover{
+
+        &:Hover {
             color: $color-azul;
         }
     }
-    img{
+
+    img {
         @include boxshadow;
         height: 900px;
         width: 700px;
     }
 }
-.locales-ubicacion{
+
+.locales-ubicacion {
     @extend .nosotros;
-    img{
+
+    img {
         @include boxshadow;
         height: 900px;
         width: 700px;
     }
 }
-.maps-container{
+
+.maps-container {
     @extend .nosotros;
 }
-.formulario-container{
+
+.formulario-container {
     @extend .nosotros;
 }
 
 .texto-nosotros {
     @include flexcenter;
     flex-direction: column;
-    p{
+
+    p {
         @include p;
         border: none;
         padding: 0 10%;
@@ -44,15 +52,17 @@
     }
 }
 
-.locales-texto{
+.locales-texto {
     @include flexcenter;
     flex-direction: column;
     justify-content: space-between;
+
     p {
         width: 700px;
         text-align: center;
     }
 }
+
 .maps {
     @extend .locales-texto;
     height: 500px;
@@ -62,16 +72,19 @@
 .locales-texto {
     @include flexcenter;
     width: 700px;
-    a{
-    @include a;
-    text-decoration-line: underline;
-    transition: 0.5s;
-    &:hover {
-        transform: scale(1.1);
-        color: $color-rosa;
+
+    a {
+        @include a;
+        text-decoration-line: underline;
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+            color: $color-rosa;
+        }
     }
 }
-}
+
 .formulario {
     @include flexcenter;
     flex-direction: column;

@@ -10,9 +10,9 @@
     height: 30px;
     background-color: rgba(0, 0, 0, 0.253);
     width: 100%;
-    border-top: 1px solid rgb(0, 0, 0);
-    border-bottom: 1px solid black;
+
     p {
+        font-size: 16 px;
         padding: 2px;
         width: 160px;
         text-shadow: white 1px 1px 2px;
@@ -20,6 +20,7 @@
         animation: mover 20s infinite;
     }
 }
+
 /* anuncio texto */
 
 /* logo de la pag, flor */
@@ -29,7 +30,8 @@
     width: 40px;
     margin-left: 20px;
     filter: drop-shadow(2px 1px 1px rgb(122, 119, 119));
-    &:hover{
+
+    &:hover {
         filter: drop-shadow(2px 1px 1px $color-rosa);
     }
 }
@@ -54,20 +56,23 @@
 
 /* search, login, carrito */
 
-.icon-button-carrito{
+.icon-button-carrito {
     color: black;
     font-size: 18px;
     padding: 8px 17px;
     transition: 0.3s;
-    &:hover{
+
+    &:hover {
         color: $color-rosa;
     }
 }
-.icon-button-login{
+
+.icon-button-login {
     @extend .icon-button-carrito
 }
-.bi-search-heart{
-    @extend .icon-button-carrito
+
+.bi-search-heart {
+    @extend .icon-button-carrito;
 }
 
 

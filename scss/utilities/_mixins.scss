@@ -2,11 +2,13 @@
     height: 700px;
     width: 700px;
 }
+
 @mixin h2 {
     font-size: 38px;
     font-weight: 600;
 }
-@mixin p{
+
+@mixin p {
     font-size: 20px;
     font-weight: 600;
     line-height: 2;
@@ -15,6 +17,7 @@
     border: 1px solid #ccc;
     border-radius: 5px;
 }
+
 @mixin flexcenter {
     display: flex;
     justify-content: center;
@@ -36,32 +39,45 @@
     height: 100%;
     object-fit: cover;
 }
-@mixin textshadow{
+
+@mixin textshadow {
     text-shadow: 2px 2px 4px rgb(68, 68, 68);
 }
-@mixin boxshadow{
+
+@mixin boxshadow {
     box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.5)
 }
-@mixin productostienda{
+
+@mixin productostienda {
     margin: 20px;
     height: 450px;
     width: 450px;
     border-radius: 2%;
     transition: 0.5s;
 }
-@mixin productocentrado{
+
+@mixin productocentrado {
     background-position: center;
     background-size: contain;
 }
+
 @mixin h1 {
     transition: 0.5s;
     font-size: 250%;
     font-weight: 800;
 }
+
 /* animacion */
 @keyframes mover {
-    0%{ left: 0;}
-    50%{ left: calc(100% - 160px); 
-        color: $color-rosa;}
-    100%{ left: 0;}
+    0% {
+        left: 0;
+    }
+
+    50% {
+        left: calc(100% - 160px);
+    }
+
+    100% {
+        left: 0;
+    }
 }

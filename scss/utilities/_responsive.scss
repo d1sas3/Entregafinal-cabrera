@@ -8,26 +8,31 @@
         margin: 50px 0px 70px 0px;
     }
 }
-@media (max-width: 1516px){
+
+@media (max-width: 1516px) {
+
     .texto-locales,
     .texto-coleccion {
         display: block;
         height: 50px;
         margin-bottom: 20px;
     }
-    .texto-coleccion{
+
+    .texto-coleccion {
         order: 2;
     }
 }
 
 /* media nosotros */
 @media (max-width: 1416px) {
+
     .locales-ubicacion,
     .formulario-container,
     .maps-container,
-    .locales-ubicacion{
+    .locales-ubicacion {
         padding: 0px;
     }
+
     .nosotros h2,
     .locales-texto h2 {
         margin: 30px;
@@ -60,11 +65,13 @@
     }
 
 }
+
 @media (max-width: 1500px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 5px;
+        margin: 10px;
         grid-template-areas:
             "img img img titulo titulo  titulo"
             "img img img descripcion descripcion descripcion "
@@ -78,32 +85,34 @@
     .publicaciones-redes-container {
         padding: 0px;
     }
-        .nav-item a:hover {
-            color: #edafb8;
-        }
-}
-    /* media -990 */
-    @media (max-width: 990px) {
-        .navbar ul {
-            margin-left: 0px;
-        }
+
+    .nav-item a:hover {
+        color: #edafb8;
     }
+}
+
+/* media -990 */
+@media (max-width: 990px) {
+    .navbar ul {
+        margin-left: 0px;
+    }
+}
 
 @media (max-width: 1000px) {
     .grid-container {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-gap: 10px;
-        margin: 20px 0px;
+        margin: 10px 0px;
         grid-template-areas:
-            ". img img img img  ."
-            ". img img img img . "
-            ". titulo titulo titulo titulo  . "
-            " . descripcion descripcion descripcion descripcion . "
+            "img img img img img  img"
+            "img img img img img img "
+            "titulo titulo titulo titulo titulo  titulo "
+            " descripcion descripcion descripcion descripcion descripcion descripcion "
             " relacionados relacionados relacionados relacionados relacionados relacionados";
     }
-
-    #boton {
+    .grid-img{
+        width: 70%;
         margin: 0 auto;
     }
 }
@@ -114,7 +123,8 @@
         margin: 0 auto;
         width: 70%;
     }
-    .relacionados-productos div{
+
+    .relacionados-productos div {
         width: 100%;
         margin: 10px 0px;
     }
@@ -125,7 +135,8 @@
     .nosotros,
     .locales-ubicacion {
         padding: 20px;
-        img{
+
+        img {
             height: 100%;
             width: 100%;
         }
@@ -158,19 +169,23 @@
 }
 
 @media (max-width: 650px) {
+
     .formulario form input,
     .formulario form textarea {
         width: 300px;
     }
+
     .publicaciones-redes {
         margin: 5px 0px;
     }
-    .maps{
-        iframe{
+
+    .maps {
+        iframe {
             height: 400px;
             width: 450px;
         }
     }
+
     .imagen-locales,
     .imagen-coleccion {
         margin: 10px;
@@ -191,11 +206,13 @@
         width: 350px;
         height: 550px;
     }
+
     .formulario {
         max-width: 300px;
     }
-    .maps{
-        iframe{
+
+    .maps {
+        iframe {
             height: 300px;
             width: 350px;
         }
@@ -265,19 +282,23 @@
         width: 18rem;
     }
 }
-@media (max-width: 420px){
-    .nosotros{
+
+@media (max-width: 420px) {
+    .nosotros {
         padding: 50px;
     }
-    .locales-ubicacion{
+
+    .locales-ubicacion {
         padding: 50px;
     }
-    .maps{
-        iframe{
+
+    .maps {
+        iframe {
             height: 300px;
             width: 300px;
         }
     }
+
     .formulario form input,
     .formulario form textarea {
         width: 250px;
